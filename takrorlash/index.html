@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="matn()">knopka1</button>
+    <button id="knopka2">knopka2</button>
+    <button id="knopka3">knopka3</button>
+    <script>
+        function matn() {
+            alert('salomlar')
+            document.getElementById('knopka2').addEventListener('click',matn)
+            document.getElementById('knopka3').addEventListener('dblclick')
+        }
+        // var kitoblar = ['matematika', 'ona tili','tarix']
+        // kitoblar [3] = 'fizika'
+        // kitoblar [4] = 'rus tili'
+        // delete kitoblar [2]
+        // kitoblar [1] = 'geografiya'
+        // console.log(kitoblar);
+       
+        // var mashina = {haydovchi:'odam', mashina:150}
+        // mashina.turi =['malibu', 'kaptiva', 'spark']
+        // console.log(mashina);
+
+//         let a = +prompt('a ga son kiting')
+//         let b = +prompt('b ga son kiriting')
+//    console.log(a*b);
+//    console.log((a**b**2)**2);
+//    console.log(a-b);
+//    console.log(a+b);
+        function matn() {
+            alert('salom')
+        }
+
+    </script>
+</body>
+</html>

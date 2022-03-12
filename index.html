@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="input" placeholder="Mahsulot">
+    <input type="number" id="input-narx" placeholder="Massa">
+    <input type="number" id="input-massa" placeholder="Narxi">
+    <button onclick="soz()">Natija</button>
+    <div id="container"></div>
+    <script>
+        let input = document.querySelector('#input');
+let massa_inp = document.querySelector('#input-massa');
+let narx_inp = document.querySelector('#input-narx');
+let con = document.querySelector("#container")
+let text ='';
+let boxes = "";
+let src = "2.jpeg";
+let narx = "";
+let massa = "";
+// let li = document.createElement("li");
+// li.innerText = "Suxrob";
+// list.appendChild(li)
+
+function soz() {
+    text = input.value
+    massa = massa_inp.value
+    narx = narx_inp.value
+    boxes += `<div class="box"><img src="${src}" alt=""><p>Mahsulot: ${text}</p><p>Massa: ${massa}</p><p>Narxi: ${narx}</p></div>`
+    massa_inp.value = '';
+    narx_inp.value = '';
+    input.value = '';
+    con.innerHTML = boxes;
+}
+    </script>
+
+</body>
+</html>
